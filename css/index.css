@@ -1,0 +1,135 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	position: relative;
+	background-color: grey;
+	height: 195px;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+
+header h1{
+
+	font-size: 2em;
+	vertical-align:	bottom;
+	padding-bottom: 5px;
+	position: absolute;
+  	top: 80%;
+  	left: 50%;
+
+
+}
+header h2{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+
+}
+
+header .container:before{
+	content: '';
+	height: 200px;
+	vertical-align:	center;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+
+
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+.icones-redes-sociais a {
+	width: 32px;
+	height: 32px;
+	display: block;
+	text-indent: -99999px;
+
+}
+.icones-redes-sociais li {
+	display: inline-block;
+	padding: 5px;
+
+}
+
+
+.github {
+	background-image: url(github.png);
+}
+
+.twitter {
+	background-image: url(twitter.png);
+}
+
+.linkedin {
+	background-image: url(linkedin.png);
+}
+
+.rodape-pagina {
+	background-color: #000;
+	color: #F2FFFC;
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.profilePicture{
+	width: 8rem;
+    border: 2px solid dimgrey;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+    background-color: grey;
+    position: absolute;
+  	top: 15%;
+  	left: 52%
+    
+}
+
+header div{
+	box-sizing: border-box;
+	padding-bottom: 10px;
+	position: center;
+	
+
+}
+
+.profile{
+	padding-top: 25px; 
+	width: 60%;
+	height: 195%;
+	margin: 0 auto;
+}
+div ul {
+	position: absolute;
+  	top: 100%;
+  	left: 51%
+}
+
+.divisor{
+
+	border-bottom: 10em black;
+}

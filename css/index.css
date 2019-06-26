@@ -9,42 +9,84 @@ body{
 
 header{
 	position: relative;
-	background-color: grey;
+	background-image: url(https://i.giphy.com/media/gU25raLP4pUu4/giphy.webp);
 	height: 195px;
 	color: #FFF;
 	margin-bottom: 1em;
+	
 }
 
 header h1{
-
+	
 	font-size: 2em;
 	vertical-align:	bottom;
 	padding-bottom: 5px;
 	position: absolute;
-  	top: 80%;
-  	left: 50%;
+  top: 80%;
+  left: 50%;
 
 
 }
-header h2{
+.profilePicture
+{
+		width: 8rem;
+		
+		/*border: 2px solid dimgrey;
+		background-color: grey;
+    border-radius: 50%;*/
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+    position: absolute;
+  	top: 15%;
+		left: -35%
+		
+    
+}
+
+header div{
+	box-sizing: border-box;
+	padding-bottom: 10px;
+	position: center;
+	
+
+}
+.titulo{
+	box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+	position: absolute;
+	top: 65%;
+	left: -33%
+}
+
+.profile{
+	 
+	width: 60%;
+	height: 195%;
+	margin: 0 auto;
+	position: relative;
+}
+main h2 {
 	font-size: 2em;
 	display:inline-block;
 	vertical-align:	middle;
 	position: absolute;
  	top: 50%;
- 	left: 50%;
-
+	left: 50%;
 }
+main p{
+	font-size: 2em;
+	display:inline-block;
+	position: absolute;
+ 	top: 60%;
+	left: 50%;
+}
+
 
 header .container:before{
 	content: '';
 	height: 200px;
 	vertical-align:	center;
 	position: absolute;
-  	top: 50%;
-  	left: 50%;
-
-
+  top: 50%;
+  left: 50%;
 }
 
 .container{
@@ -74,8 +116,6 @@ section h2{
 	padding: 5px;
 
 }
-
-
 .github {
 	background-image: url(github.png);
 }
@@ -97,39 +137,15 @@ section h2{
 	left: 0;
 	width: 100%;
 }
-.profilePicture{
-	width: 8rem;
-    border: 2px solid dimgrey;
-    border-radius: 50%;
-    box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
-    background-color: grey;
-    position: absolute;
-  	top: 15%;
-  	left: 52%
-    
-}
 
-header div{
-	box-sizing: border-box;
-	padding-bottom: 10px;
-	position: center;
-	
-
-}
-
-.profile{
-	padding-top: 25px; 
-	width: 60%;
-	height: 195%;
-	margin: 0 auto;
-}
 div ul {
 	position: absolute;
-  	top: 100%;
-  	left: 51%
+  top: 52%;
+  left: -29%
+}
+html {
+  background-color: rgb(61, 61, 61);
+	background-size: cover;
+	
 }
 
-.divisor{
-
-	border-bottom: 10em black;
-}

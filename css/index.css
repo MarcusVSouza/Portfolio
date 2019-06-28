@@ -29,15 +29,14 @@ header h1{
 }
 .profilePicture
 {
-		width: 8rem;
-		
-		/*border: 2px solid dimgrey;
-		background-color: grey;
+	width: 8rem;		
+	/*border: 2px solid dimgrey;
+	background-color: grey;
     border-radius: 50%;*/
     box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
     position: absolute;
   	top: 15%;
-		left: -35%
+	left: -35%
 		
     
 }
@@ -85,8 +84,8 @@ header .container:before{
 	height: 200px;
 	vertical-align:	center;
 	position: absolute;
-  top: 50%;
-  left: 50%;
+    top: 50%;
+    left: 50%;
 }
 
 .container{
@@ -121,11 +120,11 @@ section h2{
 }
 
 .twitter {
-	background-image: url(twitter.png);
+	background-image: url(/twitter.png);
 }
 
 .linkedin {
-	background-image: url(linkedin.png);
+	background-image: url(/img/linkedin.png);
 }
 
 .rodape-pagina {

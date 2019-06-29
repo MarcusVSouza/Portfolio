@@ -49,7 +49,7 @@ body {
 .column.side {
   height: 100%;
   width: 15%;
-  background-color: black;  
+  background-color: black 0;  
   
 }
 .column.leftSide {
@@ -60,15 +60,25 @@ body {
 .column.middle {
   width: 65%;
   padding-left: 10em;
-  background-color:black; 
+  background-color:black 0; 
    
 }
 
-.row { 
-  background-color: black;
-  border-color: #00F9FF;
+.row {
+  background-image: linear-gradient(to bottom, 
+   #000,
+   #1C1C1C,
+   #363636,
+   #4f4f4f,
+   #696969,
+   #808080,
+   #a9a9a9,
+   #c0c0c0,
+   #d3d3d3,
+   #dcdcdc
+   );
+  background-repeat: no-repeat;
 }
-
 .row:after {
   content: "";
   display: table;
@@ -76,8 +86,8 @@ body {
   
 }
 
-@media screen and (max-width: 600px , max-height 700px) {
-  .column.side, .column.middle, .column.leftSide {
+@media screen and (max-width: 600px ) {
+  .column.side, .column.middle, .column.leftSide #container .img .img2 .vertical-img #conteiner-vertical .twitter-timeline {
     width: 100%;
     overflow: auto;
   }
@@ -141,9 +151,9 @@ div ul {
   float: left;
 	height: 850px;
 	width: 65px;
-	background: #00F9FF;
 	overflow-y: scroll;
-	margin-bottom: 25px;
+  margin-bottom: 25px;
+  max-height: 100%
 }
 .style-hr {
   border: 0; 
@@ -158,6 +168,11 @@ div ul {
   border: 1px solid black);
   width: 864px;
   height: 490px;
+}
+#container1 {
+  border: 1px solid black);
+  width: 100%;
+  height: 100%;
 }
 #container-vertical{
   border: 1px solid black;

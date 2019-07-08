@@ -25,7 +25,7 @@ body {
   text-align: center;
   color: #fff;
   font-family: 'Quicksand', sans-serif;
-  
+  clear: both;
 
 }
 .profilePicture {
@@ -36,18 +36,6 @@ body {
   top: 50%;
   left: 50%;
 }  
-.lightOff{
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0 20px;
-  font-size: 1000%;
-  color: #fff;
-
-}
 .neon{
   position: absolute;
   top: 50%;
@@ -84,7 +72,7 @@ body {
 }
 .topnav {
   overflow: hidden;
-  background:#f000;
+  background:#000;
   width:100%;
    
 }
@@ -96,38 +84,26 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
-@media screen and (max-width: 600px) {
+@media (min-width: 320px) {
   .column {
     width: 100%;
   }
 }
 .column {
   float: left;
-  padding: 10px;
+  padding: 1em;
   
 }
 
-.column.side {
-  height: 100%;
-  width: 15%;
-  background-image: linear-gradient(to bottom, 
-   #000,
-   #1C1C1C,
-   #363636,
-   #4f4f4f,
-   #696969
-   );
-  background-repeat: no-repeat;
-  
-}
 .column.leftSide {
   height: 100%;
   width: 15%;
-}
+  background-color: black 0;
+ }
 
 .column.middle {
-  width: 80%;
-  padding-left: 10em;
+  width: 60%;
+  padding-left: 1em;
   background-color:black 0; 
    
 }
@@ -149,8 +125,8 @@ body {
   
 }
 .icones-redes-sociais a {
-  width: 48px;
-  height: 48px;
+  width: 3em;
+  height: 3em;
   display: block;
   text-indent: -99999999px;
   background-repeat: no-repeat; 
@@ -163,15 +139,15 @@ body {
   display: block;
   color: #00f9ff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.8em 1em;
   text-decoration: none;
   position: absolute;
 }
 .icones-redes-sociais li {
   display: inline-block;
-  padding: 5px;
-  
+  padding: 0.3em;
 }
+
 .github {
   background-image: url(img/github-48.png);
 }
@@ -192,7 +168,7 @@ div ul {
   display: block;
   color: #00F9FF;
   text-align: center;
-  padding: 30px 16px;
+  padding: 2em 1em;
   text-decoration: none;
   background-attachment: fixed;
   
@@ -207,38 +183,30 @@ div ul {
   width:100%;
   background-attachment: fixed;
 }
-.scroll-bar {
-  margin-left: 30px;
-  float: left;
-	height: 850px;
-	width: 65px;
-	overflow-y: scroll;
-  margin-bottom: 25px;
-  max-height: 100%
-}
 .style-hr {
   border: 10px; 
   height: 10px; 
   background-image: linear-gradient(left, #00f9ff, #00f9ff, #00f9ff);
 }
 #container {
-  border: 1px solid black);
-  width: 864px;
-  height: 490px;
+  border: 1px solid black;
+  width: 90%;
+  height: 40%;
 }
 #container1 {
-  border: 1px solid black);
+  border: 1px solid black;
   width: 100%;
   height: 100%;
 }
 #container-vertical{
-  width: 490px;
-  height: 800px;
+  width: 90%;
+  height: 80;
 }
 .img {
-  width: 854px;
-  height: 480px;
-  object-fit: scale-down;
+  op: 50%;
+  left: 50%;
+  width: 100%;
+  object-fit: fill;
 }
 .vertical-img {
   height: 800px;
@@ -247,7 +215,6 @@ div ul {
 .img2{
   top: 50%;
   left: 50%;
-  width: 600px;
-  position: relative;
+  width: 100%;
   object-fit: contain;
 }

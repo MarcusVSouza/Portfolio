@@ -8,14 +8,7 @@ body {
   margin: 0;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #00F9FF;
-  background-image: linear-gradient(to bottom, 
-   #000,
-   #1C1C1C,
-   #363636,
-   #4f4f4f,
-   #696969
-   );
-  background-repeat: no-repeat;
+  background-color: #000;
 }
 
 .header {
@@ -26,18 +19,6 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-.lightOff{
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0 20px;
-  font-size: 1000%;
-  color: #fff;
-
-}
 .neon{
   position: absolute;
   top: 50%;
@@ -58,7 +39,7 @@ body {
   padding: 0 20px;
   z-index: -1;
   color: #00F9FF;
-  filter: blur(5%px);
+  filter: blur(15px);
 }  
 .neon::before{
   content: '';
@@ -72,16 +53,16 @@ body {
   opacity: 0.5;
   filter: blur(40px); 
 }
-@media screen and (max-width: 600px) {
-  .column {
+@media(min-width: 320px) {
+  .column, .neon{
     width: 100%;
  }  
 }   
 
 .icones-redes-sociais a {
-  width: 48px;
-	height: 48px;
-	display: block;
+  width: 3em;
+  height: 3em;
+  display: block;
   text-indent: -99999999px;
   background-repeat: no-repeat; 
   
@@ -91,14 +72,13 @@ body {
   display: block;
   color: #00f9ff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.8em 0.8em;
   text-decoration: none;
   position: absolute;
 }
 .icones-redes-sociais li {
   display: inline-block;
-  padding: 5px;
-  
+  padding: 0.3em;
 }
 .github {
   background-image: url(img/github-48.png);
@@ -130,7 +110,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background:#f000;
+  background:#000;
   width:100%;
    
 }
@@ -139,6 +119,6 @@ body {
   display: block;
   color: #00f9ff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.8em 0.8em;
   text-decoration: none;
 }

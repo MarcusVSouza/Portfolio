@@ -3,7 +3,10 @@
 * {
   box-sizing: border-box;
 }
-
+html, body,{
+  height: 100%;
+  margin: 0;
+}
 body {
   margin: 0;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -13,12 +16,27 @@ body {
 
 .header {
   background-color: #000;
-  padding: 25%;
+  padding: 21%;
   text-align: center;
   color: #fff;
   font-family: 'Quicksand', sans-serif;
+  clear: both;
+  height: 100%;
 }
-
+.topnav {
+  overflow: hidden;
+  background:#000;
+  width:100%;
+  height: 4em;  
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #00f9ff;
+  text-align: center;
+  padding: 0.8em 0.8em;
+  text-decoration: none;
+}
 .neon{
   position: absolute;
   top: 50%;
@@ -27,11 +45,11 @@ body {
   margin: 0;
   padding: 0 20px;
   max-width: 100%;
-  font-size: 1000%;
+  font-size: 8em;
   color: #fff;
   text-shadow: 0 0 20px #00F9FF;
 }
-.neon::after{
+.neon:after{
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -41,7 +59,7 @@ body {
   color: #00F9FF;
   filter: blur(15px);
 }  
-.neon::before{
+.neon:before{
   content: '';
   position: absolute;
   top: 0;
@@ -53,11 +71,6 @@ body {
   opacity: 0.5;
   filter: blur(40px); 
 }
-@media(min-width: 320px) {
-  .column, .neon{
-    width: 100%;
- }  
-}   
 
 .icones-redes-sociais a {
   width: 3em;
@@ -106,19 +119,4 @@ body {
   height: 2.5rem;
   width:100%;
   background-attachment: fixed;
-}
-
-.topnav {
-  overflow: hidden;
-  background:#000;
-  width:100%;
-   
-}
-.topnav a {
-  float: right;
-  display: block;
-  color: #00f9ff;
-  text-align: center;
-  padding: 0.8em 0.8em;
-  text-decoration: none;
 }

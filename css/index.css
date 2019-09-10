@@ -37,6 +37,18 @@ body {
   padding: 0.8em 0.8em;
   text-decoration: none;
 }
+.neon:hover{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0 20px;
+  max-width: 100%;
+  font-size: 1000%;
+  color: #fff;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+}  
 .neon{
   position: absolute;
   top: 50%;
@@ -45,11 +57,22 @@ body {
   margin: 0;
   padding: 0 20px;
   max-width: 100%;
-  font-size: 8em;
+  font-size: 1000%;
   color: #fff;
   text-shadow: 0 0 20px #00F9FF;
 }
-.neon:after{
+.neon:hover:after{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  color: rgb(0, 0, 0);
+  filter: blur(15px);
+}
+
+.neon::after{
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -58,8 +81,20 @@ body {
   z-index: -1;
   color: #00F9FF;
   filter: blur(15px);
+}
+.neon:hover:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  z-index: -2;
+  opacity: 0.5;
+  filter: blur(40px); 
 }  
-.neon:before{
+.neon::before{
   content: '';
   position: absolute;
   top: 0;
